@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu | La Bella Cucina</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/1134bceb92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html"
+        ><img src="image/3rd-logo.png" alt="La Bella Cucina Logo" class="logo"
+      /></a>
+
+      <nav class="navigation">
+        <div>
+          <button id="open-btn" class="hide-button">
+            <i class="fa-solid fa-bars" id="toggle-icon"></i>
+          </button>
+        </div>
+        <div id="menu" class="hide-menu">
+          <div><a href="index.html">Home</a></div>
+          <div><a href="menu.html" class="active">Menu</a></div>
+          <div><a href="services.html">Services</a></div>
+          <div><a href="contact.html">Contact</a></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="menu-section">
+        <h1>Our Menu</h1>
+        <p>Explore our delicious selection of traditional Italian dishes!</p>
+        <!-- Add menu items here -->
+
+        <div class="menu-list">
+          <div class="menu-item">
+            <img src="/Client Side Dev Project Com 109/image/margherita-pizza.jpg" />
+            <div class="item-description">
+              <h3>Margherita Pizza</h3>
+              <p>Fresh mozzarella, basil, tomato sauce</p>
+              <span>£9.99</span>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="/Client Side Dev Project Com 109/image/spaghetti-bolognese.jpg" />
+            <div class="item-description">
+              <h3>Spaghetti Bolognese</h3>
+              <p>Traditional meat sauce with parmesan</p>
+              <span>£12.50</span>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="/Client Side Dev Project Com 109/image/Lasagna-al-forno.jpg" />
+            <div class="item-description">
+              <h3>Lasagna al Forno</h3>
+              <p>Layered pasta, béchamel, ragu</p>
+              <span>£13.90</span>
+              <button>Add to cart</button>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="/Client Side Dev Project Com 109/image/tiramisu.jpg" />
+            <div class="item-description">
+              <h3>Tiramisu</h3>
+              <p>Espresso, mascarpone, cocoa</p>
+              <span>£6.50</span>
+              <button>Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 La Bella Cucina. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

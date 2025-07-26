@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  /* background-color: #dc8828; */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  background-color: #192920;
+}
+
+.logo {
+  width: 180px;
+}
+
+.navigation {
+  padding: 10px 200px 10px 0px;
+}
+
+.hide-menu {
+  display: flex;
+}
+.hide-menu div {
+  margin: 20px;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.navigation a.active,
+.navigation a:hover {
+  color: #18924d;
+}
+
+/* home page (main)*/
+
+.front-page-main {
+  position: relative;
+}
+.front-page-main img {
+  display: block;
+  width: 100%;
+}
+.Welcome-section {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  position: absolute;
+  top: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 400px 400px 400px 100px;
+}
+
+h1 {
+  font-size: 110px;
+  margin-bottom: 10px;
+}
+
+.Welcome-section p {
+  font-size: 40px;
+}
+.Welcome-section li {
+  font-size: 18px;
+}
+
+.full-menu {
+  color: #18924d;
+  text-decoration: none;
+  font-weight: bold;
+}
+.full-menu:hover {
+  cursor: pointer;
+  color: #1c7a45;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #8d1919;
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: #8d1919;
+  color: #fff;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #a82323;
+}
+
+.confirmation-banner {
+  background: #ffd700;
+  color: #8d1919;
+  text-align: center;
+  padding: 12px;
+  border-radius: 6px;
+  margin: 20px auto;
+  max-width: 500px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px 0;
+  background-color: #192920;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+/* NEW: Call-to-action link */
+.cta-link {
+  color: #b30000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.cta-link:hover,
+.cta-link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.hide-button {
+  display: none;
+}
+
+/* media  */
+@media screen and (max-width: 996px) {
+  .front-page-main h1 {
+    font-size: 50px;
+  }
+  .front-page-main p {
+    font-size: 25px;
+  }
+  .Welcome-section {
+    margin: 200px 200px 200px 100px;
+  }
+}
+
+@media screen and (max-width: 787px) {
+  .hide-button {
+    display: block;
+    color: white;
+    background-color: #18924d;
+    font-size: 20px;
+    padding: 8px;
+    border: none;
+  }
+  .navigation {
+    position: relative;
+
+    padding: 10px 100px 10px 0px;
+  }
+
+  .hide-menu {
+    flex-direction: column;
+    display: none;
+    position: relative;
+  }
+
+  .hide-menu div {
+    background-color: #17b95d;
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.61);
+    padding: 30px 100px 30px 20px;
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    padding: 0px 50px;
+  }
+
+  .logo {
+    width: 150px;
+  }
+  .front-page-main h1 {
+    font-size: 40px;
+  }
+  .front-page-main p {
+    font-size: 18px;
+  }
+  .Welcome-section {
+    margin: 200px 100px 200px 20px;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .header {
+    padding: 0px 20px;
+  }
+
+  .logo {
+    width: 120px;
+  }
+  .navigation {
+    padding: 10px 50px 10px 0px;
+  }
+
+  .hide-menu a {
+    font-size: 15px;
+  }
+
+  .Welcome-section {
+    margin: 100px 50px 200px 20px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .navigation {
+    padding: 10px 30px 10px 0px;
+  }
+  .hide-menu a {
+    font-size: 12px;
+  }
+
+  .Welcome-section {
+    margin: 100px 10px 200px 10px;
+  }
+
+  .front-page-main img {
+    height: 800px;
+  }
+
+  .front-page-main h1 {
+    font-size: 40px;
+  }
+  .front-page-main p {
+    font-size: 18px;
+  }
+  .Welcome-section li {
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .front-page-main h1 {
+    font-size: 30px;
+  }
+  .front-page-main p {
+    font-size: 15px;
+  }
+  .Welcome-section li {
+    font-size: 12px;
+  }
+  .logo {
+    width: 100px;
+  }
+}

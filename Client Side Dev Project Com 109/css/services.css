@@ -1,0 +1,44 @@
+.services {
+  padding: 200px 100px 100px 100px;
+}
+
+.services-list li {
+  list-style-type: decimal;
+  margin: 50px 0px;
+  font-size: 20px;
+}
+
+/* Media */
+
+@media screen and (max-width: 996px) {
+  .services {
+    padding: 200px 20px 100px 20px;
+  }
+  .services h1 {
+    font-size: 60px;
+  }
+  .services li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .services h1 {
+    font-size: 40px;
+  }
+  .services {
+    padding: 150px 20px 30px 20px;
+  }
+  .services p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .services h1 {
+    font-size: 30px;
+  }
+  .services li {
+    font-size: 12px;
+  }
+}
