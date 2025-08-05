@@ -1,4 +1,4 @@
-# La Bella Cu – COM109 Coursework
+# La Bella Cucina – COM109 Coursework
 
 This is a fictional Italian restaurant website built for the COM109 Client Side Development coursework. It features:
 
